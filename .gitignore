@@ -1,1 +1,6 @@
+**/__pycache__
 app.db
+logs
+.env
+venv
+/.vs
