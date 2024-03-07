@@ -12,10 +12,4 @@ services:
     image: nginx:stable-alpine
     container_name: nginx
     restart: always
-  flask:
-    build: .
-    restart: always
-    ports:
-            - 5000:5000
-    volumes:
-      - ./app:/app:ro
+  
