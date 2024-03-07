@@ -86,3 +86,4 @@ WHERE user.username = ?
 2024-03-07 18:28:50,415 INFO: Planner Start [in C:\Users\Stefan Milosevic\Documents\planner-master\app\__init__.py:31]
 2024-03-07 18:29:05,811 INFO: Planner Start [in C:\Users\Stefan Milosevic\Documents\planner-master\app\__init__.py:31]
 2024-03-07 18:29:09,509 INFO: Planner Start [in C:\Users\Stefan Milosevic\Documents\planner-master\app\__init__.py:31]
+2024-03-07 18:29:23,855 INFO: Planner Start [in C:\Users\Stefan Milosevic\Documents\planner-master\app\__init__.py:31]
