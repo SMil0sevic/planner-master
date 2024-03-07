@@ -1,39 +1,88 @@
-2024-01-04 14:18:50,212 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 14:19:21,269 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 14:19:29,535 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 14:19:45,013 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 14:19:55,206 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 14:20:38,036 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 14:21:42,376 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 14:22:16,474 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 14:23:54,296 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 14:25:14,256 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 14:26:03,292 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 14:34:04,437 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 14:34:28,142 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:13:38,970 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:14:28,444 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:15:04,495 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:15:26,554 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:19:54,525 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:20:43,164 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:20:59,879 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:21:19,374 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:22:10,180 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:22:56,736 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:23:45,448 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:25:21,235 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:25:35,733 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:26:08,408 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:27:07,372 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:27:35,943 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:28:07,576 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:28:16,092 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:28:47,788 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:29:17,765 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:29:43,481 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:30:59,456 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:31:16,003 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:34:53,656 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:35:24,615 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 15:36:38,104 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-03-07 18:28:00,641 ERROR: Exception on /register [POST] [in C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 748, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\app\routes.py", line 80, in register
+    if form.validate_on_submit():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\flask_wtf\form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\wtforms\form.py", line 329, in validate
+    return super().validate(extra)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\wtforms\form.py", line 146, in validate
+    if not field.validate(self, extra):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\wtforms\fields\core.py", line 242, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\wtforms\fields\core.py", line 262, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\app\forms.py", line 23, in validate_username
+    user = User.query.filter_by(username=username.data).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2752, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2855, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2229, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2124, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 253, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1414, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 486, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2326, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Stefan Milosevic\Documents\planner-master\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 748, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: user
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.email AS user_email, user.password_hash AS user_password_hash, user.about_me AS user_about_me, user.last_seen AS user_last_seen 
+FROM user 
+WHERE user.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('Stefan', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-03-07 18:28:50,415 INFO: Planner Start [in C:\Users\Stefan Milosevic\Documents\planner-master\app\__init__.py:31]
+2024-03-07 18:29:05,811 INFO: Planner Start [in C:\Users\Stefan Milosevic\Documents\planner-master\app\__init__.py:31]
+2024-03-07 18:29:09,509 INFO: Planner Start [in C:\Users\Stefan Milosevic\Documents\planner-master\app\__init__.py:31]

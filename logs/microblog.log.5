@@ -1,4 +1,45 @@
-2024-01-04 11:20:32,981 ERROR: Exception on /index [GET] [in C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py:1744]
+2024-01-04 12:26:50,637 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:26:58,176 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:27:07,666 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:27:26,367 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:28:51,684 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:33:54,839 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:35:59,110 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:37:02,595 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:37:53,066 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:38:26,343 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:39:48,037 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:40:06,824 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:41:08,067 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:42:01,576 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:42:13,230 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:42:25,520 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:46:37,118 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:56:16,552 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:56:38,535 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:57:21,353 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 13:57:35,736 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 14:01:15,505 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 14:01:40,016 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 14:03:05,081 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 14:03:08,017 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 14:03:10,873 INFO: Planner Start [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 14:03:11,441 ERROR: Exception on /user/gio [GET] [in C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\relationships.py", line 2421, in _determine_joins
+    self.primaryjoin = join_condition(
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\sql\util.py", line 123, in join_condition
+    return Join._join_condition(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\sql\selectable.py", line 1357, in _join_condition
+    cls._joincond_trim_constraints(
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\sql\selectable.py", line 1502, in _joincond_trim_constraints
+    raise exc.AmbiguousForeignKeysError(
+sqlalchemy.exc.AmbiguousForeignKeysError: Can't determine join between 'user' and 'todo'; tables have more than one foreign key constraint relationship between them. Please specify the 'onclause' of this join explicitly.
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
   File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
     response = self.full_dispatch_request()
@@ -12,119 +53,60 @@ Traceback (most recent call last):
   File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\app\routes.py", line 21, in index
-    return render_template('index.html', title='Home',
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\templating.py", line 130, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
-    self.environment.handle_exception()
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\index.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\base.html", line 25, in top-level template code
-    {% block content %}
-  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\base.html", line 26, in block 'content'
-    {% block navbar %}
-  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\base.html", line 31, in block 'navbar'
-    {{ render_nav_item('about', 'About') }}
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\jinja2\runtime.py", line 777, in _invoke
-    rv = self._func(*arguments)
-         ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_bootstrap\templates\base\nav.html", line 5, in template
-    href="{{ url_for(endpoint, **kwargs) }}">
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 2034, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 2023, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\werkzeug\routing\map.py", line 917, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'about'. Did you mean 'logout' instead?
-2024-01-04 11:20:33,197 ERROR: Exception on /index [GET] [in C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py:1744]
-Traceback (most recent call last):
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\app\routes.py", line 21, in index
-    return render_template('index.html', title='Home',
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\templating.py", line 130, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
-    self.environment.handle_exception()
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\index.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\base.html", line 25, in top-level template code
-    {% block content %}
-  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\base.html", line 26, in block 'content'
-    {% block navbar %}
-  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\base.html", line 31, in block 'navbar'
-    {{ render_nav_item('about', 'About') }}
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\jinja2\runtime.py", line 777, in _invoke
-    rv = self._func(*arguments)
-         ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_bootstrap\templates\base\nav.html", line 5, in template
-    href="{{ url_for(endpoint, **kwargs) }}">
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 2034, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 2023, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\werkzeug\routing\map.py", line 917, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'about'. Did you mean 'logout' instead?
-2024-01-04 11:20:49,305 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 11:21:28,211 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 11:23:38,648 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 11:24:02,427 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:01:37,517 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:02:14,863 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:05:25,251 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:06:31,662 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:15:14,743 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:15:45,264 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:16:03,394 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:16:25,024 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:16:36,899 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:17:12,293 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:17:26,994 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:19:40,222 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:21:25,245 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:23:22,356 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:23:45,505 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:24:56,658 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:25:13,491 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
-2024-01-04 12:26:41,199 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_login\utils.py", line 284, in decorated_view
+    elif not current_user.is_authenticated:
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\werkzeug\local.py", line 316, in __get__
+    obj = instance._get_current_object()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\werkzeug\local.py", line 520, in _get_current_object
+    return get_name(local())  # type: ignore
+                    ^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_login\utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+                                      ^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_login\utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_login\login_manager.py", line 364, in _load_user
+    user = self._user_callback(user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\app\models.py", line 88, in load_user
+    return User.query.get(int(id))
+           ^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 30, in __get__
+    return cls.query_class(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 273, in __init__
+    self._set_entities(entities)
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 282, in _set_entities
+    self._raw_columns = [
+                        ^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 283, in <listcomp>
+    coercions.expect(
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\sql\coercions.py", line 406, in expect
+    insp._post_inspect
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 1254, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+                                           ^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2693, in _post_inspect
+    self._check_configure()
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2374, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4186, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4228, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2391, in _post_configure_properties
+    prop.init()
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\interfaces.py", line 544, in init
+    self.do_init()
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\relationships.py", line 1634, in do_init
+    self._setup_join_conditions()
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\relationships.py", line 1881, in _setup_join_conditions
+    self._join_condition = jc = JoinCondition(
+                                ^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\relationships.py", line 2308, in __init__
+    self._determine_joins()
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\sqlalchemy\orm\relationships.py", line 2465, in _determine_joins
+    raise sa_exc.AmbiguousForeignKeysError(
+sqlalchemy.exc.AmbiguousForeignKeysError: Could not determine join condition between parent/child tables on relationship User.todos - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
