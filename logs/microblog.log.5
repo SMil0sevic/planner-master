@@ -1,0 +1,130 @@
+2024-01-04 11:20:32,981 ERROR: Exception on /index [GET] [in C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\app\routes.py", line 21, in index
+    return render_template('index.html', title='Home',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\base.html", line 25, in top-level template code
+    {% block content %}
+  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\base.html", line 26, in block 'content'
+    {% block navbar %}
+  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\base.html", line 31, in block 'navbar'
+    {{ render_nav_item('about', 'About') }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\jinja2\runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_bootstrap\templates\base\nav.html", line 5, in template
+    href="{{ url_for(endpoint, **kwargs) }}">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 2034, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 2023, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\werkzeug\routing\map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'about'. Did you mean 'logout' instead?
+2024-01-04 11:20:33,197 ERROR: Exception on /index [GET] [in C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\app\routes.py", line 21, in index
+    return render_template('index.html', title='Home',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\base.html", line 25, in top-level template code
+    {% block content %}
+  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\base.html", line 26, in block 'content'
+    {% block navbar %}
+  File "C:\Users\Gio\Documents\GitHub\planner\app\templates\base.html", line 31, in block 'navbar'
+    {{ render_nav_item('about', 'About') }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\jinja2\runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask_bootstrap\templates\base\nav.html", line 5, in template
+    href="{{ url_for(endpoint, **kwargs) }}">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 2034, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\flask\app.py", line 2023, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gio\Documents\GitHub\planner\venv\Lib\site-packages\werkzeug\routing\map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'about'. Did you mean 'logout' instead?
+2024-01-04 11:20:49,305 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 11:21:28,211 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 11:23:38,648 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 11:24:02,427 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:01:37,517 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:02:14,863 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:05:25,251 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:06:31,662 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:15:14,743 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:15:45,264 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:16:03,394 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:16:25,024 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:16:36,899 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:17:12,293 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:17:26,994 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:19:40,222 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:21:25,245 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:23:22,356 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:23:45,505 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:24:56,658 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:25:13,491 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]
+2024-01-04 12:26:41,199 INFO: ToDoList Startup [in C:\Users\Gio\Documents\GitHub\planner\app\__init__.py:31]

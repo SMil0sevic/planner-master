@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block app_content %}
+<h2>Plan bearbeiten</h2>
+<form method="POST">
+    <div class="form-group">
+        <label for="todo_head"><strong>Titel:</strong></label>
+        <textarea class="form-control" id="todo_head" name="todo_head" rows="4" style="width: 300px;">{{ todo.head }}</textarea>
+        <label for="todo_body"><strong>Beschreibung:</strong></label>
+        <textarea name="todo_body" id="todo_body" class="form-control" rows="3">{{ todo.body }}</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Aenderung speichern</button>
+    <a href="{{ url_for('index') }}">Abbrechen</a>
+</form>
+{% endblock %}
+

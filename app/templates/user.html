@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block app_content %}
+<!-- Eigene Entwicklung-->
+<table>
+    <tr>
+        <td valign="top"><img src="{{ user.avatar(128) }}"></td>
+        <td style="vertical-align: top; padding-left: 20px;">
+            <h2 style="margin-top: 0;">Benutzer: {{ user.username }}</h2>
+            {% if user.about_me %}<p>{{ user.about_me }}</p>{% endif %}
+            {% if user.last_seen %}<p>Zuletzt gesehen am: {{ user.last_seen.strftime('%d-%m-%Y %H:%M:%S') }}</p>{% endif %}
+        </td>
+        <td style="padding-left: 20px;">
+            {% if user == current_user %}
+            <a href="{{ url_for('edit_profile') }}" style="color: white; background-color: #1434A4; border-radius: 5px; display: inline-block; padding: 10px 20px; font-size: 12px;"><strong>Profil bearbeiten</strong></a><br /><br />
+            <a href="{{ url_for('logout') }}" style="color: white; background-color: #ff0000; border-radius: 5px; display: inline-block; padding: 10px 20px; font-size: 12px;"><strong>Abmeldung</strong></a>
+            {% endif %}
+        </td>
+    </tr>
+</table>
+<!-- Display todos of the user -->
+<h3 style="margin-top: 5px;">{{ user.username }}'s Aufgaben:</h3>
+{% for todo in user.todos %}
+        <div class="col-sm-10 col-md-6 col-lg-5 mb-3"> 
+            <div class="card" style="padding: 15px; border: 3px solid black;">
+                <div class="card-header">
+                    <p class="card-text"><strong>Titel: {{ todo.head }}</strong></p>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{ todo.body }}</p>
+                </div>
+                <div class="card-footer text-muted">
+                    Status: Offen - eröffnet am {{ todo.timestamp.strftime('%d-%m-%Y %H:%M:%S') }}
+                </div>
+            </div>
+        </div>
+{% endfor %}
+{% endblock %}

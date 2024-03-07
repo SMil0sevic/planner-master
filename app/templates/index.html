@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<h1>{{ current_user.username }}'s Planner</h1>
+
+<!-- Form for adding a new task -->
+<div class="card mb-4">
+    <h3 class="card-header">Einen neuen Planner-Punkt hinzufügen:</h3>
+    <form action="{{ url_for('add') }}" method="POST" class="card-body">
+        <div class="form-group">
+            <label for="todo_head">Titel:</label>
+            <input type="text" name="todo_head" id="todo_head" class="form-control" placeholder="Titel eingeben">
+        </div>
+        <div class="form-group">
+            <label for="todo_body">Beschreibung:</label>
+            <textarea name="todo_body" id="todo_body" class="form-control" rows="3" placeholder="Beschreibung"></textarea>
+        </div>
+        <!-- mt-2 setzt margin top 2, damit der Button nicht am Textfeld klebt-->
+        <button type="submit" class="btn btn-dark mt-2">Aufgabe hinzufügen</button>
+    </form>
+</div>
+
+
+<!-- Display incomplete tasks -->
+<div class="row">
+    {% for todo in incomplete %}
+    <!-- col-sm, md, lg steht für small screen, medium screen and large screen. Ist für das responsive verhalten der karte zuständig. MB3 setzt den Abstand zur nächsten Karte fest-->
+    <div class="col-sm-10 col-md-6 col-lg-5 mb-3"> 
+        <div class="card" style="padding: 15px; border: 3px solid black;">
+            <div class="card-header">
+                <strong>Titel: {{ todo.head }}</strong>  Benutzer:{{ todo.author }}              
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{ todo.body }}</p>
+                <div class="btn-group" role="group">
+                    <a href="{{ url_for('complete', id=todo.id) }}" class="btn btn-success">Abschließen</a>
+                    <a href="{{ url_for('edittask', id=todo.id) }}" class="btn btn-dark">Bearbeiten</a>
+                    <a href="{{ url_for('deletetask', id=todo.id) }}" class="btn btn-danger">Löschen</a>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                Status: Offen - eröffnet am {{ todo.timestamp.strftime('%d-%m-%Y %H:%M:%S') }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Display complete tasks -->
+<div class="d-grid gap-2">
+<button class="btn btn-secondary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#completedTasks" aria-expanded="false" aria-controls="completedTasks">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.854 14.854a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V3.5A2.5 2.5 0 0 1 6.5 1h8a.5.5 0 0 1 0 1h-8A1.5 1.5 0 0 0 5 3.5v9.793l3.146-3.147a.5.5 0 0 1 .708.708z"/>
+    </svg>Erledigte Aufgaben
+ </button>
+<div class="dropdown" id="completedTasks">
+    {% for todo in complete %}
+    <div class="col-sm-10 col-md-6 col-lg-5 mb-3"> 
+       <div class="card border-success" style="padding: 15px; border: 3px solid black;">
+            <div class="card-header">
+                <p class="card-text"><strong>Titel: {{ todo.head }} durch {{ todo.author }}</strong></p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{ todo.body }}</p>
+                <div class="btn-group" role="group">
+                    <a href="{{ url_for('notcomplete', id=todo.id) }}" class="btn btn-warning">Wiedereröffnen</a>
+                    <a href="{{ url_for('deletetask', id=todo.id) }}" class="btn btn-danger">Löschen</a>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                Status: Abgeschlossen am {{ todo.timestamp.strftime('%d-%m-%Y %H:%M:%S') }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+{% endblock %}
