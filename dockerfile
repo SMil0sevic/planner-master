@@ -1,7 +1,4 @@
-#### FLASK Docker FILE ####
 FROM python:slim
-
-WORKDIR /app
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
@@ -13,9 +10,7 @@ COPY microblog.py config.py boot.sh ./
 RUN chmod a+x boot.sh
 
 ENV FLASK_APP microblog.py
+RUN flask translate compile
 
 EXPOSE 5000
-
-# Anweisung, um die Flask-App direkt auf dem Host auszuführen
-CMD ["flask", "run", "--host=0.0.0.0"]
-#############################
+ENTRYPOINT ["./boot.sh"]
